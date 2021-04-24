@@ -45,3 +45,26 @@ function hideWelcome(){
     document.getElementById('welcome').style.border="solid 1px #808080";
     document.getElementById('welcome').style.color="#808080";
 }
+
+function aboutFade(){
+    document.getElementById('about').style.backgroundColor="rgb(78, 79, 79, 0.4)";
+}
+
+function aboutDark(){
+    document.getElementById('about').style.backgroundColor="rgb(78, 79, 79, 0.8)";
+}
+
+function revealAbout(){
+document.getElementById('show-about').style.display="block";
+
+    // document.getElementById('show-about').style.webkitTransition="all .3 linear";
+    // document.getElementById('show-about').style.webkitTransition="all .3 linear";
+    // document.getElementById('show-about').style.transition="all .3 linear";
+    // document.getElementById('show-about').style.webkitTransform="scale(1)";
+    // document.getElementById('show-about').style.transform="scale(1)";
+    // document.getElementById('show-about').style.opacity="1";
+}
+
+function closeAbout(){
+    document.getElementById('show-about').style.display="none";
+}

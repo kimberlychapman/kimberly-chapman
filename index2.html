@@ -12,19 +12,30 @@
 	<script src="script.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="parallax"></div>
-    <div class="nav">
-        <div id="my-name">Kimberly Brooke Chapman</div>
-        <div id="menu">
-            <div id="home">HOME</div>
-            <div id="about">ABOUT</div>
-            <div id="resumé">RESUMÉ</div>
-            <div id="portfolio">PORTFOLIO</div>
-            <div id="contact">CONTACT</div>
+    <div class="corner">Kimberly Chapman</div>
+    <a id="sign-out" href="index.html">Sign out</a>
+    <div id="half-image">
+        <img id="profile" src="images/skyline-photo.png">
+    </div>
+    <div id="designer">Product Designer</div>
+    <div id="about" onmouseover="aboutFade()" onmouseout="aboutDark()" onclick="revealAbout()">
+        <img id="info-about" src="images/info2.png">
+        <div id="about-me">About me</div>
+    </div>
+    <div id="show-about">
+        <div id="exit-about" onclick="closeAbout()">
+            <img id="click-x" src="images/x2.png">
         </div>
     </div>
-    <div id="landing"></div>
-    <div class="parallax"></div>
+    <div id="rec">Critically-Acclaimed Resumé</div>
+    <div id="res-block"></div>
+
+
+
+
+
+
+
 <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
