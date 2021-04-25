@@ -209,21 +209,21 @@
 }
 
 #about-img{
-    height:130px;
-    width:598px;
+    height:190px;
+    width:600px;
     margin-bottom:20px;
-    margin-top:30px;
-    /* box-shadow: 0 8px 6px -6px black;  */
+    /* margin-top:30px; */
+    box-shadow: 0 8px 6px -6px black; 
     /* border:2px solid black; */
 }
 #value{
-    height:130px;
-    width:598px;
+    height:190px;
+    width:600px;
 }
 #exit-about{
     position:absolute;
     top:1%;
-    left:91%;
+    left:94%;
     height:40px;
     width:40px;
     float:right;
