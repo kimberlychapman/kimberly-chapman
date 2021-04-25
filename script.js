@@ -70,3 +70,20 @@ function closeAbout(){
     document.getElementById('show-about').style.display="none";
     document.getElementById('my-pic').style.display="block";
 }
+function openRes(){
+    document.getElementById('res-screen').style.display="flex";
+    document.getElementById('my-pic').style.display="none";
+    document.getElementById('sign-out').style.display="none";
+    document.getElementById('my-pic').style.display="none";
+    document.getElementById('designer').style.display="none";
+    document.getElementById('about').style.display="none";
+}
+
+function closeRes(){
+    document.getElementById('res-screen').style.display="none";
+    document.getElementById('my-pic').style.display="flex";
+    document.getElementById('sign-out').style.display="flex";
+    document.getElementById('my-pic').style.display="flex";
+    document.getElementById('designer').style.display="flex";
+    document.getElementById('about').style.display="flex";
+}
