@@ -119,8 +119,8 @@
 }
 #my-pic{
     position:absolute;
-    top:14%;
-    left:43%;
+    top:13.5%;
+    left:44%;
     border:2px inset  rgb(78, 79, 79, 0.8);
     z-index: 4;
     height:270px;
@@ -144,7 +144,7 @@
 }
 #about{
     position: absolute;
-    top:19%;
+    top:16.75%;
     left:1.75%;
     z-index: 2;
     background-color: rgb(78, 79, 79, 0.6);
@@ -157,7 +157,7 @@
 }
 #designer{
     position:absolute;
-    top:8.5%;
+    top:6.5%;
     left:1.75%;
     color: #262626;
     font-family: 'Playfair Display', serif;
@@ -347,11 +347,36 @@
     font-size:18pt;
     font-family: 'Netflix Sans Regular';
 }
-#res-block{
+#res-blocks{
     position:fixed;
     top:490px;
     left:0px;
+    display:flex;
+    flex-direction: row;
     height:200px;
     width:99.5%;
-    border:2px solid #333333;  
+    border:2px solid transparent;  
+    /* border:2px solid #333333;   */
+}
+#res-blocks:hover{
+    border:2px solid white;
+}
+#res-block-first{
+    height:200px;
+    width:20%;
+    border:2px solid #333333; 
+    margin-right:0.5%;
+    margin-left:0.25%;
+}
+#res-block{
+    height:200px;
+    width:20%;
+    border:2px solid #333333; 
+    margin-right:0.5%;
+}
+#res-block-final{
+    height:200px;
+    width:20%;
+    border:2px solid #333333; 
+    /* margin-right:0.5%; */
 }
