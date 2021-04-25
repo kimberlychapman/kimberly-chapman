@@ -389,8 +389,8 @@
 #res-screen{
     overflow: scroll;
     overflow-y: scroll;
-    /* display:none; */
-    display:flex;
+    display:none;
+    /* display:flex; */
     flex-direction: column;
     position:fixed;
     top:0;
@@ -515,7 +515,7 @@
     flex-direction: row;
     width:90%;
     height:900px;
-    border:solid 2px aqua;
+    /* border:solid 2px aqua; */
     margin-left:5%;
     overflow-y: scroll;
     overflow: scroll;
@@ -526,7 +526,7 @@
     /* line-height: 70px; */
     font-family: 'sf_ui_displayregular';
     font-size: 18pt;
-    border:2px dashed lime;
+    /* border:2px dashed lime; */
     margin-right:5%;
     margin-left:5%;
 }
