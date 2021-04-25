@@ -47,15 +47,16 @@ function hideWelcome(){
 }
 
 function aboutFade(){
-    document.getElementById('about').style.backgroundColor="rgb(78, 79, 79, 0.4)";
+    document.getElementById('about').style.backgroundColor="rgb(78, 79, 79, 0.3)";
 }
 
 function aboutDark(){
-    document.getElementById('about').style.backgroundColor="rgb(78, 79, 79, 0.8)";
+    document.getElementById('about').style.backgroundColor="rgb(78, 79, 79, 0.6)";
 }
 
 function revealAbout(){
-document.getElementById('show-about').style.display="block";
+document.getElementById('show-about').style.display="flex";
+document.getElementById('my-pic').style.display="none";
 
     // document.getElementById('show-about').style.webkitTransition="all .3 linear";
     // document.getElementById('show-about').style.webkitTransition="all .3 linear";
@@ -67,4 +68,5 @@ document.getElementById('show-about').style.display="block";
 
 function closeAbout(){
     document.getElementById('show-about').style.display="none";
+    document.getElementById('my-pic').style.display="block";
 }
