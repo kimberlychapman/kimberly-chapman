@@ -484,41 +484,53 @@
 .job{
     display: flex;
     flex-direction: row;
-    height:70px;
+    height:100px;
     width:90%;
-    /* border:2px dashed blue; */
-    /* background-color: yellow; */
+    /* border:2px dashed blue;
+    background-color: yellow; */
     z-index:5;
     margin-left:5%;
     /* border-bottom:1px solid gray; */
 }
 #job-title{
-    height:70px;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    /* position:absolute;
+    top:15%;
+    left:10%; */
+    height:50px;
     width:250px;
-    line-height: 70px;
+    /* line-height: 25px; */
     font-family: 'sf_ui_displayregular';
     font-size: 18pt;
     /* border:2px dashed lime; */
     margin-right:5%;
     margin-left:5%;
+    margin-top:15px;
+    /* margin-left:3.4%; */
 }
 #job-description{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     height:70px;
-    line-height:1.6;
+    /* line-height:1.6; */
     width:1000px;
     font-family: 'sf_ui_displayregular';
     font-size: 13pt;
-    margin-top:15px;
+    /* margin-top:15px; */
 }
-.experience{
+.experience,
+.education{
     display:flex;
     flex-direction: row;
     width:90%;
-    height:900px;
+    /* height:100%; */
     /* border:solid 2px aqua; */
     margin-left:5%;
-    overflow-y: scroll;
-    overflow: scroll;
+    /* overflow-y: scroll;
+    overflow: scroll; */
 }
 #experience-title{
     height:900px;
@@ -529,19 +541,34 @@
     /* border:2px dashed lime; */
     margin-right:5%;
     margin-left:5%;
+    /* border: 2px solid lime; */
 }
+
 #ex-categories{
-    height:900px;
+    height:100%;
     width:1000px;
     font-family: 'sf_ui_displayregular';
     font-size: 13pt;
     display:flex;
     flex-direction:column;
+    /* border: 2px solid lime; */
+}
+#ed-categories{
+    height:300px;;
+    width:1000px;
+    font-family: 'sf_ui_displayregular';
+    font-size: 13pt;
+    display:flex;
+    flex-direction:column;
+    /* border: 2px solid lime; */
 }
 .ex-cat-title{
     font-weight:bold;
     font-size:14pt;
+    /* border: 2px solid lime; */
+    /* height:30px; */
 }
+
 /* 
 #rs1{
     display:flex;
