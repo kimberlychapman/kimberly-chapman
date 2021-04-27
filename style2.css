@@ -75,10 +75,12 @@
     }
     body,html{
         height:100%;
-        overflow-x: hidden;
-        background-color: #141414;
         overflow-y: scroll;
+        display: block;
+        /* overflow-x: hidden; */
+        background-color: #141414;
         overflow: scroll;
+
     }
     .corner{
         position:fixed;
@@ -110,13 +112,17 @@
         text-decoration-line: underline;
         text-decoration-thickness: 2px;
     }
-
+.top-screen{
+    height:400px;
+    width:100%;
+    /* border:solid 3px white; */
+}
 
 #half-image{
     position: fixed;
     top:50px;
     left:0px;
-    height:1500px;
+    /* height:1500px; */
     width:100%;
 }
 #my-pic{
@@ -124,7 +130,7 @@
     top:13.5%;
     left:44%;
     border:2px inset  rgb(78, 79, 79, 0.8);
-    z-index: 4;
+    z-index: 2;
     height:270px;
     width:202px;
     border-radius: 5px;
@@ -201,7 +207,7 @@
     height:750px;
     width:600px;
     background-color: #333333;
-    opacity:0.9;
+    opacity:0.97;
     /* border:solid 2px lime; */
     border-radius: 5px;
     /* -webkit-transform: scale(0);
@@ -340,24 +346,33 @@
     line-height: normal;
     font-size:11pt;
 }
+.res-section{
+    display:flex;
+    flex-direction:column;
+    height: 255px;
+    width:100%;
+    /* border:solid 2px orange; */
+    margin-top:25px;
+}
 #rec{
-    position: fixed;
+    /* position: fixed;
     top:430px;
-    left:0;
+    left:0; */
     margin-left:5px;
     color:white;
     font-size:18pt;
     font-family: 'Netflix Sans Regular';
 }
 #res-blocks{
-    position:fixed;
+    /* position:fixed;
     top:490px;
-    left:0px;
+    left:0px; */
     display:flex;
     flex-direction: row;
-    height:200px;
+    height:255px;
     width:99.5%;
     border:2px solid transparent;  
+    margin-top:15px;
     /* border:2px solid #333333;   */
 }
 #res-blocks:hover{
@@ -541,7 +556,7 @@
     /* overflow-y: scroll;
     overflow: scroll; */
 }
-.skills{
+.my-skills{
     display:flex;
     flex-direction: row;
     width:90%;
@@ -599,45 +614,77 @@
 .ex-skills{
     margin-bottom:5px;
 }
-/* #divider{
-    height:5px;
-    width:90%;
-    margin-left:5%;
-    margin-right:5%;
-    text-align: center;
-    border-top:1px solid gray;
-    opacity:0.8;
-
-} */
-/* 
-#rs1{
-    display:flex;
+#portfolio-title{
+    /* position: fixed;
+    top:720px;
+    left:0; */
+    margin-left:5px;
+    color:white;
+    font-size:18pt;
+    font-family: 'Netflix Sans Regular';
+    /* margin-bottom:20px; */
+}
+.portfolio{
+    display: flex;
     flex-direction: column;
-    position: fixed;
-    top:210px;
-    left:20%;
-    height:120px;
-    width:60%; */
-    /* border:solid 3px magenta; */
-    /* margin-left:10%; */
-    /* border-bottom: solid 1px gray;
-} */
-/* #rs1-title{
-    height:120px;
-    width:250px;
-    line-height: 120px;
-    font-family: 'sf_ui_displayregular';
-    font-size: 24pt;
-    border:2px dashed lime;
-    margin-right:10%;
-} */
-/* #rs1-content{
-    height:120px;
-    width:450px;
-    line-height: 120px;
-    font-family: 'sf_ui_displayregular';
-    font-size: 20pt;
-    border:2px dashed lime;
+    /* position: fixed;
+    top:750px;
+    left:0;  */
+    height:550px;
+    width:99.5%;
+    /* overflow-x: scroll; */
+    /* border:solid 2px blue; */
+    margin-top:25px;
+    /* overflow-y: scroll; */
+    z-index:2;
+}
+#portfolio-pieces{
+   display: flex; 
+   flex-direction: row;
+   height:500px;
+   width:99.5%;
+   margin-top: 15px;
+}
+#portfolio1{
+    height:500px;
+    width:20%;
+    margin-right:0.5%;
+    margin-left:0.25%;
+    border:2px solid #333333; 
+    /* background-color: yellow;
+    border:inset 2px coral; */
+}
+#portfolio2,
+#portfolio3,
+#portfolio4{
+    height:500px;
+    width:20%;
+    margin-right:0.5%;
+    border:2px solid #333333; 
+    /* background-color: yellow;
+    border:inset 2px coral; */
+}
+#portfolio5{
+    height:500px;
+    width:20%;
+    border:2px solid #333333; 
+    /* background-color: yellow;
+    border:inset 2px coral; */
+    /* margin-right:0.5%; */
+}
 
-} */
 
+#portfolio1 img{
+    height:490px;
+    width:95%;
+    margin-top:5px;
+    margin-left:2.5%;
+    border-radius:2px;
+}
+#portfolio1:hover,
+#portfolio2:hover,
+#portfolio3:hover,
+#portfolio4:hover,
+#portfolio5:hover{
+    border:2px solid white;
+}
