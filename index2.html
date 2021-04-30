@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-	<title>Kimberly Brooke Chapman</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kimberly Brooke Chapman</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="webfontkit-20210419-163330/stylesheet.css">
     <link rel="stylesheet" href="webfontkit-20210421-170130/stylesheet.css">
     <link rel="stylesheet" href="netflix-sans-cufonfonts-webfont/style.css">
-	<script src="script.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
 </head>
-<style>
+<!-- <style>
     body
     {
         animation: fadeInAnimation ease 3s;
@@ -26,253 +26,56 @@
             opacity: 1;
         }
     }
-</style>
+</style> -->
 <body>
-    <div class="top-screen">
-            <!-- <div class="corner">Kimberly Chapman</div>
-            <a id="sign-out" href="index.html">Sign out</a> -->
-            <div id="half-image">
-                <img id="profile" src="images/skyline-photo.png">
+    <div class="corner">Kimberly Chapman</div>
+    <div id="who">Who's Watching?</div>
+    <div class="profiles">
+        <a id="adult" onmouseover="showAdult()" onmouseout="hideAdult()" href="index.html">
+            <div class="pic">
+                <img id="adult-pic" src="images/netflix-square.png">
             </div>
-            <div id="my-pic">
-                <img id="linked" src="images/heeadshot.png">
+            <p id="adult-text">Adult</p>
+        </a>
+        <a id="kid" onmouseover="hiKid()" onmouseout="byeKid()" href="index.html">
+            <div class="pic">
+                <img id="kid-pic" src="images/chiild-netflix.png">
             </div>
-            <div class="corner">Kimberly Chapman</div>
-            <a id="sign-out" href="index.html">Sign out</a>
-            <div id="designer">Product Designer</div>
-            <div id="about" onmouseover="aboutFade()" onmouseout="aboutDark()" onclick="revealAbout()">
-                <img id="info-about" src="images/info2.png">
-                <div id="about-me">About me</div>
+            <p id="kid-text">Child</p>
+        </a>
+        <a id="sadie" onmouseover="goodMorning()" onmouseout="goodEvening()" href="index.html">
+            <div class="pic">
+                <img id="sadie-pic" src="images/sadie-netflix.png">
             </div>
+            <p id="sadie-text">Sadie</p>
+        </a>
+        <div id="add-profile">
+            <div class="pic">
+                <img id="add-pic" src="images/add-square.png">
+            </div>
+            <p id="add-text">Add Profile</p>
+        </div>
     </div>
-    <div id="show-about">
-        <div id="about-img">
-            <img id="value" src="images/desk.png">
+    <a id="welcome" href="index.html" onmouseover="showWelcome()" onmouseout="hideWelcome()">Welcome</a>
+    <div id="fair-use">
+        <div id="copyright">COPYRIGHT DISCLAIMER</div>
+        <div id="more" onclick="showDisclaimer()">
+            <img id="info" src="images/info.png">
         </div>
-        <div id="exit-about" onclick="closeAbout()">
-            <img id="click-x" src="images/x.png">
+    </div>
+    <div id="disclaimer">
+        <div id="disclaimer-text">Under Section 107 of the Copyright Act of 1976, 
+            allowance is made for “fair use” for purposes such as commentary, 
+            parody, news reporting, teaching, scholarship, and research.  
+            Fair use is permitted by copyright statute that might otherwise be infringing.
         </div>
-        <div id="about-title">About Me</div>
-        <div id="about-intro">I design educational products that are interactive, accessible, and culturally relevant: 
-            to increase user engagement and motivation.&nbsp I am especially dedicated to designing products for a  
-            diverse audience and for individuals with disabilities.
+        <div id="exit" onclick="hideDisclaimer()">
+            <img id="click-x" src="images/x2.png">
         </div>
-        <div class="skills">
-            <div id="agile">
-                <div class="check">
-                    <img src="images/checkmark.png">
-                </div>
-                <div class="skill">
-                    <span id="caps">Agile Design</span>
-                    <br>
-                    <span id="explain">Utilizing agile design practices to create interactive products and user experiences.</span>
-                </div>   
-            </div>
-            <div id="tools">
-                <div class="check2">
-                    <img src="images/checkmark.png">
-                </div>
-                <div class="skill2">
-                    <span id="caps">Design Tools</span>
-                    <br>
-                    <span id="explain">Using Visual Studio Code, Atom, Adobe XD, and Photoshop to produce high caliber wireframes, 
-                    prototypes/product mockups (including web/app prototypes), and user journeys.</span>
-                </div>   
-            </div>
-            <div id="programming">
-                <div class="check">
-                    <img src="images/checkmark.png">
-                </div>
-                <div class="skill">
-                    <span id="caps">Programming Skills [Intermediate Level]</span>
-                    <br>
-                    <span id="explain">HTML, CSS, Javascript, Python – including Python GUI (Tkinter).</span>
-                </div>   
-            </div>
-            <div id="interpersonal">
-                <div class="check">
-                    <img src="images/checkmark.png">
-                </div>
-                <div class="skill">
-                    <span id="caps">Interpersonal Skills</span>
-                    <br>
-                    <span id="explain">Team Leadership, Communication, Collaborative Problem Solving, Consulting, Staff Development, Organization, and Public Speaking.</span>
-                </div>   
-            </div>
-        </div>
+    </div>
+    <!-- <div id="stream"></div> -->
         
-    </div>
-    <div class="res-section">
-        <div id="rec">Critically-Acclaimed Resumé</div>
-        <div id="res-blocks" onclick="openRes()">
-            <div id="res-block-first">
-                <img class="res-pic" src="images/ray.png">
-            </div>
-            <div id="res-block">
-                <img class="res-pic" src="images/cyp.png">
-            </div>
-            <div id="res-block">
-                <img class="res-pic" src="images/policy.png">
-            </div>
-            <div id="res-block">
-                <img class="res-pic" src="images/tui.png">
-            </div>
-            <div id="res-block-final">
-                <img class="res-pic" src="images/a11y.png">
-            </div>
-        </div>
-    </div>
-    <div id="res-screen">
-        <div id="back-btn" onclick="closeRes()">
-            <img src="images/back-button.png">
-        </div>
-        <div id="res-top">
-            <div id="res-top1">
-                <div id="res-headshot">
-                    <img src="images/heeadshot.png">
-                </div>
-                <div id="res-name">Kimberly Chapman<br><span style="font-size:26pt;">(she/her/hers)</span></div>
-            </div>
-            <div id="res-top2">
-                <div id="res-contact">e: &nbsp<a class="res-contact" href="mailto:kimberlychapman2020@u.northwestern.edu" target="_blank">kimberlychapman2020@u.northwestern.edu</a>
-                </div>
-                <div id="res-contact2">l: &nbsp<a class="res-contact2" href="https://www.linkedin.com/in/kimberly-chapman-a9781411b/detail/contact-info/">linkedin.com/in/kimberly-chapmanb</a>
-                </div>
-                <div id="res-contact3">w: &nbsp<a class="res-contact3" href="https://kimberly-chapman.com">https://kimberly-chapman.com</a></div>
-            </div>
-        </div>
-        <!-- <hr style="width:100%; text-align: center; color:#4682B4;"> -->
-        <div class="job">
-            <div id="job-title">Product Designer</div>
-            <div id="job-description">Designing technology that is interactive, accessible, and culturally relevant, to increase user engagement and motivation.</div>
-        </div>
-        <hr style="width:90%;text-align: center;color:gray; opacity:0.8;">
-        <div class="experience">
-            <div id="experience-title">Experience</div>
-            <div id="ex-categories">
-                <div class="ex-cat-title">Freelance and Corporate Projects (2019 - present)</div>
-                <br>
-                <div class="ex">
-                    <span style="text-decoration: underline;">Product Design</span><span style="font-style: italic;"> Swift Playground – Making coding accessible to users who are blind</span><br>
-                    <span style="font-size:12pt;">• In Swift Playground by Apple, users masters programming concepts by writing codes to guide their bot through different mazes.<br>
-                    • Current version for users who are blind has them trace their path through the mazes on braille boards; they only interact with the app when they use voice control to record and revise their code.<br>
-                    • My prototype has the user trace their path on the tablet using a tool that works like a white cane: providing audio and touch feedback so that they know when they have gone off the path.</span>
-                </div>
-                <br>
-                <div class="ex">
-                    <span style="text-decoration: underline;">Instructional Design</span><span style="font-style: italic;"> Britannica for Parents — Interactive Distance Learning</span><br>
-                    <span style="font-size: 12pt;">• Interviewed parents of children with special needs to find out what aspects of distance learning were the most challenging for their children.<br>
-                    • Came up with a solution that addressed their pains, gains, and needs: interactive activities that would keep them engaged, that didn't require a lot of assistance, and that utilized household items.
-                    <br>• Identified tools and activities for parents to use with their children, and developed an interactive unit for teachers where students designed and built models of a distance learning "classroom" using household items.</span>
-                </div>
-                <br>
-                <div class="ex">
-                    <span style="text-decoration: underline;">Product Design</span><span style="font-style: italic;"> Sound City App — A Tactile Phonics App</span><br>
-                    <span style="font-size: 12pt;">• Designed a phonics web application for beginning readers that pairs a device with physical game pieces.<br>
-                    • The application uses narratives to teach phonetic concepts, and all of the activities include visual, auditory, and tactile components so that readers can use all of their senses to master phonics concepts.</span>
-                </div>
-                <br>
-                <div class="ex">
-                    <span style="text-decoration: underline;">Learning Experience Design</span><span style="font-style: italic;"> Interactive Museum Exhibit – La Lina</span><br>
-                    <span style="font-size: 12pt;">• Interactive Museum Exhibit that explores the history of the U.S.–Mexico border through the stories of those who experienced "La Lina".
-                    <br>• Two of the Interactive features: murals containing hidden blacklight images that visitors can discover using a UV blacklight flashlight, an app that allows users to personalize their exhibit experience.<span style="font-style:italic;">*Project Paused due to Covid-19.</span></span>
-                </div>
-                <br>
-                <div class="ex-cat-title">Education, Policy, and Consulting (2011 - 2019)</div>
-                <br>
-                <div class="ex">
-                    <span style="text-decoration: underline;">Chicago Public Schools Special Education Teacher</span><span style="font-size: 12pt;"> (2011 - 2019)</span><span style="font-size:13pt;">:</span><br>
-                    <span style="font-size:12pt">• Designed hands-on, inquiry-based curriculum for Reading, Math, Science, and Social Sciences.
-                    <br>• Provided professional development on inclusive practices and multimodal learning.<br>• Established programs to support parents and to improve coordination between in-school and at-home learning.</span>
-                </div>
-                <br>
-                <div class="ex">
-                    <span style="text-decoration: underline;">Chicago Public Schools Diverse Learner Advocacy and Policy</span><span style="font-style: italic;"> — Multimodal Literacy Initiative</span><span style="font-size: 12pt;"> (2018-2019)</span><span style="font-size: 13pt;">:</span>
-                    <br>
-                    <span style="font-size:12pt;">• Wrote a policy proposal to make multimodal literacy programs more widely available.<br>
-                    • Presented the proposal to members of the Chicago Board of Education and conducted demo lessons for educators and stakeholders.<br>
-                    • The policy was adopted by Chicago Public Schools Network 9 (grades k-8), a network of 20 elementary schools on the South Side servicing over 7000 students.
-                    </span>
-                </div>
-                <br>
-                <div class="ex">
-                    <span style="text-decoration: underline;">Chicago Youth Programs Consultant for the Path to Readers Program</span><span style="font-size: 12pt;"> (2016 - 2017)</span><span style="font-size:13pt;">:</span>
-                    <br>
-                    <span style="font-size: 12pt;">• Consulted on the design and implementation of Chicago Youth Program's early literacy program, for children ages 3-6.<br>
-                    • Trained parents and community volunteers on how to implement the program.</span>
-                </div>
-            </div>
-        </div>
-        <hr style="width:90%;text-align: center;color:gray; opacity:0.8;">
-        <div class="education">
-            <div id="experience-title">Education</div>
-                <div id="ed-categories">
-                    <div class="ex">
-                        <span style="font-weight: bold; font-size:14pt;">Northwestern University, Evanston, IL</span><br>
-                        <span style="font-size:13;">Master of Arts in Learning Sciences (August 2020).</span>
-                    </div>
-                    <br>
-                    <div class="ex">
-                        <span style="font-weight: bold; font-size:14pt;">University of Wisconsin–Madison, Madison, WI</span><br>
-                        <span style="font-size:13;">Bachelor of Science in Education, Concentration in Special Education (December 2010).</span>
-                    </div>
-                </div>
-        </div>
-        <hr style="width:90%;text-align: center;color:gray; opacity:0.8;">
-        <div class="my-skills">
-            <div id="experience-title">Skills</div>
-                <div id="skills-categories">
-                    <div class="ex-skills">
-                        <span style="font-size:13pt; text-decoration: underline;">Agile Design</span>
-                        <span style="font-size:12pt;">: Utilizing agile design practices to create engaging, interactive products and user experiences.</span>
-                    </div>
-                    <div class="ex-skills">
-                        <span style="font-size:13pt; text-decoration: underline;">Design Tools</span>
-                        <span style="font-size:12pt;">: Using Visual Studio Code, Atom, Adobe XD, and Photoshop to produce high-caliber wireframes,
-                            prototypes/product mockups (including web/app prototypes), and user journeys.</span>
-                    </div>
-                    <div class="ex-skills">
-                        <span style="font-size:13pt; text-decoration: underline;">Front-end Programming</span><span style="font-style: italic; font-size:12pt;"> (Intermediate Level)</span>
-                        <span style="font-size:12pt;">: HTML/CSS, Javascript, Python & Python GUI (Tkinter).</span>
-                    </div>
-                    <div class="ex-skills">
-                        <span style="font-size:13pt; text-decoration: underline;">Interpersonal Skills</span>
-                        <span style="font-size:12pt;">: Team Leadership, Communication, Collaborative Problem Solving, Consulting, Staff Development, Organization, and Public Speaking.</span>
-                    </div>
-                </div>
-        </div>
-        <!-- </div> -->
-    </div>
-    <div class="portfolio">
-        <div id="portfolio-title">Original Projects</div>
-        <div id="portfolio-pieces">
-            <div id="portfolio1">
-                <img id="a11y-pic" src="images/a11y-portfolio.png">
-            </div>
-            <div id="portfolio2">
-                <img id="brit-pic" src="images/brit-portfolio.png">
-            </div>
-            <div id="portfolio3">
-                <img id="interactive-pic" src="images/interactive-pic.png">
-            </div>
-            <div id="portfolio4">
-                <img id="sc-pic" src="images/sc-pic.png">
-            </div>
-            <div id="portfolio5">
-                <img id="museum-pic" src="images/museum-pic.png">
-            </div>
-        </div>
-    </div>
-       
-
-  
-
-
-
-
-
-
-
-    <script src="script.js" type="text/javascript"></script>
+   
+<script src="script.js" type="text/javascript"></script>
 </body>
 </html>
