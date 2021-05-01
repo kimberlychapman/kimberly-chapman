@@ -189,16 +189,15 @@
                 <br>
                 <div class="ex">
                     <span style="text-decoration: underline;">Product Design</span><span style="font-style: italic;"> Swift Playground – Making coding accessible to users who are blind</span><br>
-                    <span style="font-size:12pt;">• In Swift Playground by Apple, users masters programming concepts by writing codes to guide their bot through different mazes.<br>
+                    <span style="font-size:12pt;">• In Swift Playgrounds by Apple, users masters programming concepts by writing codes to guide their bot through different mazes.<br>
                     • Current version for users who are blind has them trace their path through the mazes on braille boards; they only interact with the app when they use voice control to record and revise their code.<br>
                     • My prototype has the user trace their path on the tablet using a tool that works like a white cane: providing audio and touch feedback so that they know when they have gone off the path.</span>
                 </div>
                 <br>
                 <div class="ex">
                     <span style="text-decoration: underline;">Instructional Design</span><span style="font-style: italic;"> Britannica for Parents — Interactive Distance Learning</span><br>
-                    <span style="font-size: 12pt;">• Interviewed parents of children with special needs to find out what aspects of distance learning were the most challenging for their children.<br>
-                    • Came up with a solution that addressed their pains, gains, and needs: interactive activities that would keep them engaged, that didn't require a lot of assistance, and that utilized household items.
-                    <br>• Identified tools and activities for parents to use with their children, and developed an interactive unit for teachers where students designed and built models of a distance learning "classroom" using household items.</span>
+                    <span style="font-size: 12pt;">• Interviewed teachers and parents of children with special needs to find out what aspects of distance learning were the most challenging for their children/students.<br>
+                   • Came up with solutions that addressed their pains, gains, and needs: hands-on activities to build foundational skills, behavioral and social-emotional tools, and interactive learning activities.</span>
                 </div>
                 <br>
                 <div class="ex">
@@ -281,10 +280,10 @@
     <div class="portfolio">
         <div id="portfolio-title">Original Projects</div>
         <div id="portfolio-pieces">
-            <div id="portfolio1">
+            <div id="portfolio1" onclick="showA11y()">
                 <img id="a11y-pic" src="images/a11y-portfolio.png">
             </div>
-            <div id="portfolio2">
+            <div id="portfolio2" onclick="showBrit()">
                 <img id="brit-pic" src="images/brit-portfolio.png">
             </div>
             <div id="portfolio3">
@@ -298,9 +297,21 @@
             </div>
         </div>
     </div>
+    <div id="overlay"></div>
     <div id="a11y-big">
-        <!-- <img src="images/a11y-big.png"> -->
+        <img id="a11y-b" src="images/a11y-big.png">
+        <div id="exit-a11y" onclick="leaveA11y()">
+            <img id="a11y-x" src="images/x.png">
+        </div>
     </div>
+    <div id="brit-big">
+        <img id="brit-b" src="images/brit-big.png">
+        <div id="exit-brit" onclick="leaveBrit()">
+            <img id="a11y-x" src="images/x.png">
+        </div>
+    </div>
+    
+ 
        
 
   

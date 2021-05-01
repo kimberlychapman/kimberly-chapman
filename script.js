@@ -88,6 +88,23 @@ function closeRes(){
     document.getElementById('about').style.display="flex";
 }
 
+function showA11y(){
+    document.getElementById('overlay').style.display="block";
+    document.getElementById('a11y-big').style.display="block";
+}
+function leaveA11y(){
+    document.getElementById('overlay').style.display="none";
+    document.getElementById('a11y-big').style.display="none";
+}
+function showBrit(){
+    document.getElementById('overlay').style.display="block";
+    document.getElementById('brit-big').style.display="block";
+}
+function leaveBrit(){
+    document.getElementById('overlay').style.display="none";
+    document.getElementById('brit-big').style.display="none";
+}
+
 // Dropdown Menu
 var dropdown = document.querySelectorAll('.dropdown');
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
