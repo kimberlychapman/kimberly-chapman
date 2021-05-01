@@ -1324,9 +1324,7 @@ display: none;
     /* background-color: yellow;
     border:inset 2px coral; */
 }
-#portfolio2,
-#portfolio3,
-#portfolio4{
+#portfolio2{
     height:500px;
     width:20%;
     margin-right:0.5%;
@@ -1335,16 +1333,25 @@ display: none;
     /* background-color: yellow;
     border:inset 2px coral; */
 }
+#portfolio3,
+#portfolio4{
+    height:500px;
+    width:20%;
+    margin-right:0.5%;
+    border:2px solid #333333; 
+    cursor: default;
+    /* background-color: yellow;
+    border:inset 2px coral; */
+}
 #portfolio5{
     height:500px;
     width:20%;
     border:2px solid #333333; 
-    cursor: pointer;
+    cursor: default;
     /* background-color: yellow;
     border:inset 2px coral; */
     /* margin-right:0.5%; */
 }
-
 
 #a11y-pic,
 #brit-pic,
@@ -1357,20 +1364,44 @@ display: none;
     margin-left:2.5%;
     border-radius:2px;
 }
-/* #portfolio1:hover,
-#portfolio1:focus,
-#portfolio1:active{
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-} */
+#soon1{
+  display: none;
+  position: absolute;
+  top:78.75%;
+  left:45%;
+  /* display:none; */
+  color:white;
+  font-size:20pt;
+  font-family: 'Netflix Sans Regular';
+  z-index:4;
+}
+
+#soon2{
+  display: none;
+  position: absolute;
+  top:78.75%;
+  left:65%;
+  /* display:none; */
+  color:white;
+  font-size:20pt;
+  font-family: 'Netflix Sans Regular';
+  z-index:4;
+}
+
+#soon3{
+  display: none;
+  position: absolute;
+  top:78.75%;
+  left:85%;
+  /* display:none; */
+  color:white;
+  font-size:20pt;
+  font-family: 'Netflix Sans Regular';
+  z-index:4;
+}
 #portfolio1:hover,
-#portfolio2:hover,
-#portfolio3:hover,
-#portfolio4:hover,
-#portfolio5:hover{
+#portfolio2:hover{
     border:2px solid white;
-    /* -webkit-transform:scale(1.1);
-    transform:scale(1.1); */
 }
 
 .grow-on-hover {

@@ -105,6 +105,29 @@ function leaveBrit(){
     document.getElementById('brit-big').style.display="none";
 }
 
+function showSoon1(){
+    document.getElementById('soon1').style.display="block";
+}
+function hideSoon1(){
+    document.getElementById('soon1').style.display="none";
+}
+
+function showSoon2(){
+    document.getElementById('soon2').style.display="block";
+}
+function hideSoon2(){
+    document.getElementById('soon2').style.display="none";
+}
+
+function showSoon3(){
+    document.getElementById('soon3').style.display="block";
+}
+function hideSoon3(){
+    document.getElementById('soon3').style.display="none";
+}
+
+
+
 // Dropdown Menu
 var dropdown = document.querySelectorAll('.dropdown');
 var dropdownArray = Array.prototype.slice.call(dropdown,0);
