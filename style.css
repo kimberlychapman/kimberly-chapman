@@ -1804,6 +1804,9 @@ display: none;
   #soon1,
   #soon2,
   #soon3{
+    position: absolute;
+    top:72%;
+    /* left:45%; */
     font-size: 14pt;
     margin-left:-2.5%;
     /* top:73%; */
@@ -1861,4 +1864,12 @@ display: none;
 .res-section{
   height:200px;
 }
+}
+
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
 }
