@@ -71,7 +71,8 @@ function closeAbout(){
     document.getElementById('my-pic').style.display="block";
 }
 function openRes(){
-    document.getElementById('res-screen').style.display="flex";
+    document.getElementById('grid-container').style.display="grid";
+    document.getElementById('back').style.display="block";
     document.getElementById('my-pic').style.display="none";
     document.getElementById('sign-out').style.display="none";
     document.getElementById('my-pic').style.display="none";
@@ -80,7 +81,8 @@ function openRes(){
 }
 
 function closeRes(){
-    document.getElementById('res-screen').style.display="none";
+    document.getElementById('grid-container').style.display="none";
+    document.getElementById('back').style.display="none";
     document.getElementById('my-pic').style.display="flex";
     document.getElementById('sign-out').style.display="flex";
     document.getElementById('my-pic').style.display="flex";

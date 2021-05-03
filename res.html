@@ -5,153 +5,21 @@
 	<title>Kimberly Brooke Chapman</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="res.css">
     <link rel="stylesheet" href="webfontkit-20210419-163330/stylesheet.css">
     <link rel="stylesheet" href="webfontkit-20210421-170130/stylesheet.css">
     <link rel="stylesheet" href="netflix-sans-cufonfonts-webfont/style.css">
 	<script src="script.js" type="text/javascript"></script>
 </head>
-<style>
-    body
-    {
-        animation: fadeInAnimation ease 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-    @keyframes fadeInAnimation {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-</style>
 <body>
-    <div class="top-screen">
-            <!-- <div class="corner">Kimberly Chapman</div>
-            <a id="sign-out" href="index.html">Sign out</a> -->
-            <div id="half-image">
-                <img id="profile" src="images/skyline-photo.png">
-            </div>
-            <div id="my-pic">
-                <img id="linked" src="images/heeadshot.png">
-            </div>
-            <div class="corner">Kimberly Chapman</div>
-            <div id="designer">Product Designer</div>
-            <div id="left-buttons">
-                <div class="drop-container">
-                    <ul>
-                    <li class="dropdown">
-                        <a id="test" href="#" data-toggle="dropdown">Contact<img id="caret" src="images/caret-down.png"></a>
-                        <ul class="dropdown-menu">
-                        <li><a id="contact-me1" href="mailto:kimberlychapman2020@u.northwestern.edu"><img id="mail" src="images/gmail-logo.png">kimberlychapman2020@u.northwestern.edu</a></li>
-                        <li><a id="contact-me2" href="https://www.linkedin.com/in/kimberly-chapmanb/"><img id="linked-logo" src="images/linked-logo.png"><br>https://www.linkedin.com/in/kimberly-chapmanb/</a></li>
-                
-                        </ul>
-                    </li>
-                    </ul>
-                </div>
-                <div id="about" onmouseover="aboutFade()" onmouseout="aboutDark()" onclick="revealAbout()">
-                    <img id="info-about" src="images/info2.png">
-                    <div id="about-me">About me</div>
-                </div>
-            </div>
-            <div id="exit">
-                <div id="ring-bell">
-                    <img id="bell" src="images/bell-icon.png">
-                </div>
-                <a id="sign-out" href="index2.html">Sign out</a>
-            </div>
-          
-
-    </div>
-    <div id="show-about">
-        <div id="about-img">
-            <img id="value" src="images/desk.png">
-        </div>
-        <div id="exit-about" onclick="closeAbout()">
-            <img id="click-x" src="images/x.png">
-        </div>
-        <div id="about-title">About Me</div>
-        <div id="about-intro">I design educational products that are interactive, accessible, and culturally relevant: 
-            to increase user engagement and motivation.&nbsp I am especially dedicated to designing products for a  
-            diverse audience and for individuals with disabilities.
-        </div>
-        <div class="skills">
-            <div id="agile">
-                <div class="check">
-                    <img src="images/checkmark.png">
-                </div>
-                <div class="skill">
-                    <span id="caps">Agile Design</span>
-                    <br>
-                    <span id="explain">Utilizing agile design practices to create interactive products and user experiences.</span>
-                </div>   
-            </div>
-            <div id="tools">
-                <div class="check2">
-                    <img src="images/checkmark.png">
-                </div>
-                <div class="skill2">
-                    <span id="caps">Design Tools</span>
-                    <br>
-                    <span id="explain">Using Visual Studio Code, Atom, Adobe XD, and Photoshop to produce high caliber wireframes, 
-                    prototypes/product mockups (including web/app prototypes), and user journeys.</span>
-                </div>   
-            </div>
-            <div id="programming">
-                <div class="check">
-                    <img src="images/checkmark.png">
-                </div>
-                <div class="skill">
-                    <span id="caps">Programming Skills [Intermediate Level]</span>
-                    <br>
-                    <span id="explain">HTML, CSS, Javascript, Python – including Python GUI (Tkinter).</span>
-                </div>   
-            </div>
-            <div id="interpersonal">
-                <div class="check">
-                    <img src="images/checkmark.png">
-                </div>
-                <div class="skill">
-                    <span id="caps">Interpersonal Skills</span>
-                    <br>
-                    <span id="explain">Team Leadership, Communication, Collaborative Problem Solving, Consulting, Staff Development, Organization, and Public Speaking.</span>
-                </div>   
-            </div>
-        </div>
-        
-    </div>
-    <div class="res-section">
-        <div id="rec">Critically-Acclaimed Resumé</div>
-        <div id="res-blocks" onclick="openRes()">
-            <div id="res-block-first">
-                <img class="res-pic" src="images/ray.png">
-            </div>
-            <div id="res-block">
-                <img class="res-pic" src="images/cyp.png">
-            </div>
-            <div id="res-block">
-                <img class="res-pic" src="images/policy.png">
-            </div>
-            <div id="res-block">
-                <img class="res-pic" src="images/tui.png">
-            </div>
-            <div id="res-block-final">
-                <img class="res-pic" src="images/a11y.png">
-            </div>
-        </div>
-    </div>
-
-    <div id="back" onclick=closeRes()>
-        <img id="back-btn" src="images/back-button.png">
-    </div>
-    
-    <div id="grid-container" onclick="openRes()">
+    <div class="grid-container">
         <div class="profile-pic">
+            <div id="back">
+                <img id="back-btn" src="images/back-button.png">
+            </div>
             <img id="headshot" src="images/heeadshot.png">
         </div>
+
         <div class="profile-title">
             <div id="my-name">Kimberly Chapman</div>
             <div id="pronouns">(she/her/hers)</div>
@@ -228,53 +96,25 @@
             <div class="skill-area"><span style="text-decoration: underline;">Interpersonal Skills</span>: Team Leadership, Communication, Collaborative Problem Solving, Consulting, Staff Development, Organization, and Public Speaking.</div>
         </div>
     </div>
-    <div class="portfolio">
-        <div id="portfolio-title">Original Projects</div>
-        <div id="portfolio-pieces">
-            <div id="portfolio1" onclick="showA11y()">
-                <img id="a11y-pic" src="images/a11y-portfolio.png">
-            </div>
-            <div id="portfolio2" onclick="showBrit()">
-                <img id="brit-pic" src="images/brit-portfolio.png">
-            </div>
-            <div id="portfolio3" onmouseover="showSoon1()" onmouseout="hideSoon1()">
-                <img id="interactive-pic" src="images/interactive-pic.png">
-            </div>
-            <div id="portfolio4" onmouseover="showSoon2()" onmouseout="hideSoon2()">
-                <img id="sc-pic" src="images/sc-pic.png">
-            </div>
-            <div id="portfolio5" onmouseover="showSoon3()" onmouseout="hideSoon3()">
-                <img id="museum-pic" src="images/museum-pic.png">
-            </div>
-        </div>
-    </div>
-    <div id="overlay"></div>
-    <div id="a11y-big">
-        <img id="a11y-b" src="images/a11y-big.png">
-        <div id="exit-a11y" onclick="leaveA11y()">
-            <img id="a11y-x" src="images/x.png">
-        </div>
-    </div>
-    <div id="brit-big">
-        <img id="brit-b" src="images/brit-big.png">
-        <div id="exit-brit" onclick="leaveBrit()">
-            <img id="a11y-x" src="images/x.png">
-        </div>
-    </div>
-  <div id="soon1">Coming Soon!</div>
-  <div id="soon2">Coming Soon!</div>
-  <div id="soon3">Coming Soon!</div>
- 
-       
-
-  
 
 
-
-
-
-
-
-    <script src="script.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-3753241-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+    </script>
 </body>
 </html>
+
+<!-- /* <div class="grid-container">
+  <div class="profile"></div>
+  <div class="contact"></div>
+  <div class="title"></div>
+  <div class="experience"></div>
+  <div class="education"></div>
+  <div class="skills"></div>
+</div> */ -->
