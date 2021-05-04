@@ -310,7 +310,7 @@ body,html{
 #adult,
 #kid,
 #sadie{
-  height:200px;
+  height:230px;
   width:150px;
   /* border:2px inset magenta; */
   /* margin-left:20px; */
@@ -368,6 +368,7 @@ body,html{
   /* margin-left:auto;
   margin-right:auto; */
   font-size:16pt;
+  /* border:solid 2px orangered; */
 }
 a{
   text-decoration: none;
