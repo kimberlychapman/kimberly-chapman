@@ -2124,10 +2124,10 @@ display: none;
     border:2px solid #333333;  
 }
   .res-pic{
-    height:115px;
+    height:100px;
   }
   #res-block-first{
-    height:120px;
+      height:120px;
       width:20%;
       border:2px solid #333333; 
       margin-right:0.5%;
@@ -2190,14 +2190,14 @@ display: none;
   #sc-pic,
   #interactive-pic,
   #museum-pic{
-      height:280px;
+      height:230px;
       width:95%;
       margin-top:5px;
       margin-left:2.5%;
       border-radius:2px;
   }
   .portfolio{
-    height:320px;
+    height:300px;
 }
 #portfolio1,
 #portfolio2,
