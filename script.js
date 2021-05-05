@@ -107,6 +107,15 @@ function leaveBrit(){
     document.getElementById('brit-big').style.display="none";
 }
 
+function showDL(){
+    document.getElementById('overlay').style.display="block";
+    document.getElementById('dl-big').style.display="block";
+}
+function leaveDL(){
+    document.getElementById('overlay').style.display="none";
+    document.getElementById('dl-big').style.display="none";
+}
+
 function showSoon1(){
     document.getElementById('soon1').style.display="block";
 }
