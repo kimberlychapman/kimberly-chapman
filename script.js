@@ -115,6 +115,22 @@ function leaveDL(){
     document.getElementById('overlay').style.display="none";
     document.getElementById('dl-big').style.display="none";
 }
+function showSC(){
+    document.getElementById('overlay').style.display="block";
+    document.getElementById('sc-big').style.display="block";
+}
+function leaveSC(){
+    document.getElementById('overlay').style.display="none";
+    document.getElementById('sc-big').style.display="none";
+}
+function showEX(){
+    document.getElementById('overlay').style.display="block";
+    document.getElementById('ex-big').style.display="block";
+}
+function leaveEX(){
+    document.getElementById('overlay').style.display="none";
+    document.getElementById('ex-big').style.display="none";
+}
 
 function showSoon1(){
     document.getElementById('soon1').style.display="block";
