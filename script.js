@@ -71,23 +71,25 @@ function closeAbout(){
     document.getElementById('my-pic').style.display="block";
 }
 function openRes(){
-    document.getElementById('grid-container').style.display="grid";
+    document.getElementById('my-res').style.display="block";
     document.getElementById('back').style.display="block";
     document.getElementById('my-pic').style.display="none";
     document.getElementById('sign-out').style.display="none";
     document.getElementById('my-pic').style.display="none";
     document.getElementById('designer').style.display="none";
     document.getElementById('about').style.display="none";
+    document.querySelector(".portfolio").style.display="none";
 }
 
 function closeRes(){
-    document.getElementById('grid-container').style.display="none";
+    document.getElementById('my-res').style.display="none";
     document.getElementById('back').style.display="none";
     document.getElementById('my-pic').style.display="flex";
     document.getElementById('sign-out').style.display="flex";
     document.getElementById('my-pic').style.display="flex";
     document.getElementById('designer').style.display="flex";
     document.getElementById('about').style.display="flex";
+    document.querySelector(".portfolio").style.display="flex";
 }
 
 function showA11y(){
@@ -187,3 +189,4 @@ dropdownArray.forEach(function(el){
 Element.prototype.hasClass = function(className) {
     return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
 };
+
