@@ -1403,7 +1403,8 @@ display: none;
     border:inset 2px coral; */
     /* margin-right:0.5%; */
 }
-#portfolio6{
+#portfolio6,
+#portfolio7{
   height:510px;
   width:20%;
   border:2px solid #333333; 
@@ -1411,6 +1412,14 @@ display: none;
   /* background-color: yellow;
   border:inset 2px coral; */
   /* margin-right:0.5%; */
+}
+#portfolio7{
+  color:white;
+  font-size:18pt;
+  font-family: 'Netflix Sans Regular';
+  justify-content: center;
+  text-align:center;
+  line-height:510px;
 }
 
 #a11y-pic,
@@ -2004,7 +2013,8 @@ and (orientation : portrait) {
 #portfolio3,
 #portfolio4,
 #portfolio5,
-#portfolio6{
+#portfolio6,
+#portfolio7{
   height:285px;
 }
 .res-section{
@@ -2352,7 +2362,8 @@ and (orientation : landscape) {
 #portfolio3,
 #portfolio4,
 #portfolio5,
-#portfolio6{
+#portfolio6,
+#portfolio7{
   height:300px;
 }
 
