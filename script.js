@@ -79,6 +79,8 @@ function openRes(){
     document.getElementById('designer').style.display="none";
     document.getElementById('about').style.display="none";
     document.querySelector(".portfolio").style.display="none";
+    document.querySelector(".portfolio-ed").style.display="none";
+
 }
 
 function closeRes(){
@@ -90,15 +92,23 @@ function closeRes(){
     document.getElementById('designer').style.display="flex";
     document.getElementById('about').style.display="flex";
     document.querySelector(".portfolio").style.display="flex";
+    document.querySelector(".portfolio-ed").style.display="flex";
 }
 
 function showA11y(){
     document.getElementById('overlay').style.display="block";
     document.getElementById('a11y-big').style.display="block";
+    document.querySelector(".portfolio").style.display="none";
+    document.querySelector(".portfolio-ed").style.display="none";
+    // document.getElementById("portfolio-pieces").display="none";
 }
 function leaveA11y(){
     document.getElementById('overlay').style.display="none";
     document.getElementById('a11y-big').style.display="none";
+    document.querySelector(".portfolio").style.display="flex";
+    document.querySelector(".portfolio").style.display="flex";
+    document.querySelector(".portfolio-ed").style.display="flex";
+    // document.querySelector(".portfolio").display="flex";
 }
 function showBrit(){
     document.getElementById('overlay').style.display="block";
@@ -133,7 +143,19 @@ function leaveEX(){
     document.getElementById('overlay').style.display="none";
     document.getElementById('ex-big').style.display="none";
 }
+function showLH(){
+    document.getElementById('overlay').style.display="block";
+    document.getElementById('lh-big').style.display="block";
+    document.querySelector(".portfolio").style.display="none";
+    document.querySelector(".portfolio-ed").style.display="none";
+}
+function leaveLH(){
+    document.getElementById('overlay').style.display="none";
+    document.getElementById('lh-big').style.display="none";
+    document.querySelector(".portfolio").style.display="flex";
+    document.querySelector(".portfolio-ed").style.display="flex";
 
+}
 // function showSoon1(){
 //     document.getElementById('soon1').style.display="block";
 // }
