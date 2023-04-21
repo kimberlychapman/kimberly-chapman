@@ -1,37 +1,37 @@
 function showMotor(){
-    document.getElementById('motor').style.textShadow = "1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue";
-    document.getElementById('motor').style.color="white";
+    document.getElementById('motor').style.color= "#3f64ff";
+    document.getElementById('diverse').style.textDecorationColor="#3f64ff";
 }
 function hideMotor(){
-    document.getElementById('motor').style.textShadow = "none";
-    document.getElementById('motor').style.color="black";
+    document.getElementById('motor').style.color= "var(--ui-color-typography-heading)";
+    document.getElementById('diverse').style.textDecorationColor="var(--ui-color-typography-heading)";
 }
 
 function showAccount(){
-    document.getElementById('account').style.textShadow = "1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue";
-    document.getElementById('account').style.color="white";
+    document.getElementById('account').style.color= "#3f64ff";
+    document.getElementById('issues').style.textDecorationColor="#3f64ff";
 }
 function hideAccount(){
-    document.getElementById('account').style.textShadow = "none";
-    document.getElementById('account').style.color="black";
+    document.getElementById('account').style.color= "var(--ui-color-typography-heading)";
+    document.getElementById('issues').style.textDecorationColor="var(--ui-color-typography-heading)";
 }
 
 function showLaw(){
-    document.getElementById('law').style.textShadow = "1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue";
-    document.getElementById('law').style.color="white";
+    document.getElementById('law').style.color= "#3f64ff";
+    document.getElementById('protect').style.textDecorationColor="#3f64ff";
 }
 function hideLaw(){
-    document.getElementById('law').style.textShadow = "none";
-    document.getElementById('law').style.color="black";
+    document.getElementById('law').style.color= "var(--ui-color-typography-heading)";
+    document.getElementById('protect').style.textDecorationColor="var(--ui-color-typography-heading)";
 }
 
 function showStart(){
-    document.getElementById('start').style.textShadow = "1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue";
-    document.getElementById('start').style.color="white";
+    document.getElementById('start').style.color= "#3f64ff";
+    document.getElementById('fin').style.textDecorationColor="#3f64ff";
 }
 function hideStart(){
-    document.getElementById('start').style.textShadow = "none";
-    document.getElementById('start').style.color="black";
+    document.getElementById('start').style.color= "var(--ui-color-typography-heading)";
+    document.getElementById('fin').style.textDecorationColor="var(--ui-color-typography-heading)";
 }
 
 function homeBlue(){
@@ -82,8 +82,15 @@ function excelDefault(){
     document.getElementById('excel').style.color= "var(--ui-color-typography-heading)";
 }
 
+function topBlue(){
+    document.getElementById('go-back').style.color= "#3f64ff";
+    document.getElementById('back').style.textDecorationColor="#3f64ff";
+}
 
-
+function topDefault(){
+    document.getElementById('go-back').style.color= "var(--ui-color-typography-heading)";
+    document.getElementById('back').style.textDecorationColor="var(--ui-color-typography-heading)";
+}
 // let hamMenuIcon = document.getElementById("ham-menu");
 // let navBar = document.getElementById("nav-bar");
 // let navLinks = navBar.querySelectorAll(".title");
