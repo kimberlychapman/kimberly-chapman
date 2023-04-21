@@ -91,6 +91,28 @@ function topDefault(){
     document.getElementById('go-back').style.color= "var(--ui-color-typography-heading)";
     document.getElementById('back').style.textDecorationColor="var(--ui-color-typography-heading)";
 }
+
+function emailBlue(){
+    document.getElementById('email').style.color= "#3f64ff";
+    document.getElementById('email').style.textDecorationColor="#3f64ff";
+}
+
+function emailDefault(){
+    document.getElementById('email').style.color= "var(--ui-color-typography-heading)";
+    document.getElementById('email').style.textDecorationColor="var(--ui-color-typography-note)";
+}
+
+function linkedBlue(){
+    document.getElementById('linked').style.color= "#3f64ff";
+    document.getElementById('linked').style.textDecorationColor="#3f64ff";
+}
+
+function linkedDefault(){
+    document.getElementById('linked').style.color= "var(--ui-color-typography-heading)";
+    document.getElementById('linked').style.textDecorationColor="var(--ui-color-typography-note)";
+}
+
+
 // let hamMenuIcon = document.getElementById("ham-menu");
 // let navBar = document.getElementById("nav-bar");
 // let navLinks = navBar.querySelectorAll(".title");
