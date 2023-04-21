@@ -660,10 +660,10 @@ div label[for=ui-component-toggle__yearly] {
   width: 5rem; */
 }
 
-.ui-section-testimonial--quote {
-  /* margin-bottom: 1rem;
-  margin-top: 1rem; */
-}
+/* .ui-section-testimonial--quote {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+} */
 
 .ui-section-testimonial--author { line-height: 1.25; }
 
