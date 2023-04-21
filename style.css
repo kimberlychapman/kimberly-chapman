@@ -649,20 +649,20 @@ div label[for=ui-component-toggle__yearly] {
 
 .ui-section-testimonial {
   background-color: var(--ui-color-background-secondary);
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  /* text-align: center; */
 }
 
 .ui-section-testimonial--avatar {
   border-radius: var(--ui-radius-avatar);
-  height: 5rem;
-  width: 5rem;
+  /* height: 5rem;
+  width: 5rem; */
 }
 
 .ui-section-testimonial--quote {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  /* margin-bottom: 1rem;
+  margin-top: 1rem; */
 }
 
 .ui-section-testimonial--author { line-height: 1.25; }
@@ -1194,8 +1194,8 @@ div label[for=ui-component-toggle__yearly] {
   ------------------------------------------------------------*/
 
   .ui-section-testimonial {
-    padding-bottom: 7.5rem;
-    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   /*------------------------------------------------------------
@@ -1357,10 +1357,14 @@ h1 span {
   word-spacing: 1px;
   color: #888;
 }
-#experience{
-  display:flex;
+#experience,
+#me,
+#strengths,
+#uni,
+#projects{
+  /* display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -1475,13 +1479,7 @@ h1 span {
     margin-top: unset;
   }
 }
-/* #about{
-  border:solid 2px black;
-  padding:10px;
-  background-color:rgb(255, 255, 255, 0.4);
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-} */
+
 #education{
   /* background-color:rgb(255, 255, 255, 0.2); */
   border-radius: 10px;
@@ -1506,14 +1504,14 @@ h1 span {
 /* } */
 .work{
   /* border:solid 2px black; */
-  margin-top:30px;
-  background-color: #F8F9FA;
+  /* margin-top:30px; */
+  background-color: #e2e6e9;
   padding-top:20px;
 }
 .skills{
   /* border:solid 2px aqua; */
   margin-top:-50px;
-  background-color: #E9ECEF;
+  background-color: #d3d9de;
   /* margin-top:30px; */
 }
   
@@ -1574,7 +1572,7 @@ h1 span {
   /* border:solid 2px magenta; */
 }
 .skill-area li{
-  font-size: 11pt;
+  font-size: 13pt;
 }
 .skill-category{
   /* border: solid 2px green; */
@@ -1583,7 +1581,8 @@ h1 span {
   margin-right:auto;
   color:var(--ui-color-typography-heading);
   font-family: 'Lato', sans-serif;
-  font-weight:500;
+  font-weight:bold;
+  font-size:14pt;
   /* font-size:25px; */
 }
 #ed-level{
@@ -1594,6 +1593,7 @@ padding-right:5%;
 .contact{
   font-family: 'Lato', sans-serif;
   color:var(--ui-color-typography-heading);
+  font-size:14pt;
   /* font-weight: bold; */
 }
 .divider{
@@ -1606,9 +1606,10 @@ padding-right:5%;
 #content-point{
   color:var(--ui-color-typography-heading);
   text-align: left;
+  font-size:13pt;
 }
 .school{
-  background-color: #d3d9de;
+  background-color: #c5cdd3;
   /* border:solid 2px black; */
   padding-top:30px;
   padding-bottom: 30px;
@@ -1622,6 +1623,25 @@ padding-right:5%;
 }
 .portfolio{
   padding-top:30px;
-  padding-bottom: 30px;
-  background-color: #c6ccd2;
+  /* padding-bottom: 30px; */
+  background-color: #b6bfc8;
 }
+.return{
+  /* border:solid 2px black; */
+  background-color: #b6bfc8;
+  text-align:end;
+  padding-right:10px;
+  font-size:16pt;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#back{
+  text-decoration: none;
+}
+/* #back{
+  border:solid 2px black;
+  position:absolute;
+  bottom:10;
+
+} */

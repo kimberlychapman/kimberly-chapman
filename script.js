@@ -34,17 +34,67 @@ function hideStart(){
     document.getElementById('start').style.color="black";
 }
 
-let hamMenuIcon = document.getElementById("ham-menu");
-let navBar = document.getElementById("nav-bar");
-let navLinks = navBar.querySelectorAll(".title");
+function homeBlue(){
+    document.getElementById('home').style.color= "#3f64ff";
+}
 
-hamMenuIcon.addEventListener("click", () => {
-  navBar.classList.toggle("active");
-  hamMenuIcon.classList.toggle("fa-times");
-});
-navLinks.forEach((navLinks) => {
-  navLinks.addEventListener("click", () => {
-    navBar.classList.remove("active");
-    hamMenuIcon.classList.toggle("fa-times");
-  });
-});
+function homeDefault(){
+    document.getElementById('home').style.color= "var(--ui-color-typography-heading)";
+}
+
+function abBlue(){
+    document.getElementById('ab').style.color= "#3f64ff";
+}
+
+function abDefault(){
+    document.getElementById('ab').style.color= "var(--ui-color-typography-heading)";
+}
+
+function expBlue(){
+    document.getElementById('exp').style.color= "#3f64ff";
+}
+
+function expDefault(){
+    document.getElementById('exp').style.color= "var(--ui-color-typography-heading)";
+}
+
+function edBlue(){
+    document.getElementById('ed').style.color= "#3f64ff";
+}
+
+function edDefault(){
+    document.getElementById('ed').style.color= "var(--ui-color-typography-heading)";
+}
+
+function proBlue(){
+    document.getElementById('pro').style.color= "#3f64ff";
+}
+
+function proDefault(){
+    document.getElementById('pro').style.color= "var(--ui-color-typography-heading)";
+}
+
+function excelBlue(){
+    document.getElementById('excel').style.color= "#3f64ff";
+}
+
+function excelDefault(){
+    document.getElementById('excel').style.color= "var(--ui-color-typography-heading)";
+}
+
+
+
+// let hamMenuIcon = document.getElementById("ham-menu");
+// let navBar = document.getElementById("nav-bar");
+// let navLinks = navBar.querySelectorAll(".title");
+
+// hamMenuIcon.addEventListener("click", () => {
+//   navBar.classList.toggle("active");
+//   hamMenuIcon.classList.toggle("fa-times");
+// });
+// navLinks.forEach((navLinks) => {
+//   navLinks.addEventListener("click", () => {
+//     navBar.classList.remove("active");
+//     hamMenuIcon.classList.toggle("fa-times");
+//   });
+// });
