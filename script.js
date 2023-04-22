@@ -112,6 +112,16 @@ function linkedDefault(){
     document.getElementById('linked').style.textDecorationColor="var(--ui-color-typography-note)";
 }
 
+function resBlue(){
+    document.getElementById('res').style.color= "#3f64ff";
+    document.getElementById('res').style.textDecorationColor="#3f64ff";
+}
+
+function resDefault(){
+    document.getElementById('res').style.color= "var(--ui-color-typography-heading)";
+    document.getElementById('res').style.textDecorationColor="var(--ui-color-typography-note)";
+}
+
 
 // let hamMenuIcon = document.getElementById("ham-menu");
 // let navBar = document.getElementById("nav-bar");
