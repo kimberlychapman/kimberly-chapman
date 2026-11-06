@@ -1,0 +1,541 @@
+/*
+	custom.css — Kimberly Chapman portfolio
+	Loaded after Strata's main.css. All site-specific overrides live here;
+	leave main.css untouched so the template can be updated later.
+*/
+
+/* ---------- Theme knobs ---------- */
+
+:root {
+	--accent: #0d619c;            /* 6.5:1 on white. From the AI cover. Links, buttons, focus rings. */
+	--accent-ink: #0d619c;
+	--accent-dark: #0a4776;       /* 9.7:1. Hover / pressed. */
+	--slate: #1e2527;             /* sidebar base, from the Disability cover */
+	--ink: #3c3c3c;               /* body text, 10.3:1 */
+	--ink-heading: #2b2b2b;       /* headings, 13.6:1 */
+	--ink-muted: #595959;         /* secondary text, 7:1 (AA for any size) */
+	--rule: #d9d9d9;
+}
+
+/* ---------- WCAG 2.2 AA baseline (overrides Strata defaults) ---------- */
+
+body, input, select, textarea {
+	color: var(--ink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--ink-heading);
+}
+
+strong, b {
+	color: var(--ink-heading);
+}
+
+a {
+	color: var(--accent);
+	border-bottom-color: currentColor;
+}
+
+a:hover {
+	color: var(--accent-ink) !important;
+	border-bottom-color: transparent;
+}
+
+/* Strata's work-item and footer text runs small. 1em keeps body copy at the base size. */
+.work-item p,
+.project-facts,
+.project-summary p,
+.project-sample .note {
+	font-size: 1em;
+}
+
+/* Buttons: Strata uses #787878 text/border (4.5:1, borderline). */
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	border-color: var(--ink-heading);
+	color: var(--ink-heading) !important;
+}
+
+.button.primary,
+input[type="submit"].primary {
+	background-color: var(--accent);
+	border-color: var(--accent);
+	color: #fff !important;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+	border-color: var(--accent) !important;
+	color: var(--accent) !important;
+}
+
+.button.primary:hover {
+	background-color: var(--accent-dark);
+	border-color: var(--accent-dark) !important;
+	color: #fff !important;
+}
+
+/* Visible focus for every focusable element (2.4.7, 2.4.11). */
+a:focus-visible,
+button:focus-visible,
+.button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+	outline: 3px solid var(--accent);
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+
+/* Skip link: hidden until focused (2.4.1). */
+.skip-link {
+	background: var(--accent);
+	border: 0;
+	color: #fff !important;
+	left: 1em;
+	padding: 0.75em 1.25em;
+	position: absolute;
+	top: -100px;
+	z-index: 10000;
+}
+
+.skip-link:focus {
+	top: 1em;
+}
+
+/* Honor reduced-motion preference (2.3.3). */
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+	.work-item .project-link:hover .project-thumb img {
+		transform: none;
+	}
+}
+
+/* ---------- Header ---------- */
+
+/* Strata's header text is 50% white on a photo, which cannot guarantee contrast.
+   Put a darkening layer behind the content and use solid white text. */
+@media screen and (min-width: 981px) {
+	#header {
+		position: fixed;
+	}
+}
+
+#header::before {
+	background: rgba(0, 0, 0, 0.45);
+	content: "";
+	inset: 0;
+	position: absolute;
+	z-index: 0;
+}
+
+#header > .inner,
+#header #footer {
+	position: relative;
+	z-index: 1;
+}
+
+#header h1,
+#header .site-title {
+	color: #fff;
+	font-size: 1.35em;
+	line-height: 1.75em;
+	margin: 0;
+}
+
+#header h1 a,
+#header .site-title a {
+	border-bottom: none;
+	color: #fff !important;
+}
+
+#header h1 a:hover,
+#header .site-title a:hover {
+	border-bottom: dotted 1px;
+}
+
+#header .site-title strong {
+	color: #fff;
+}
+
+#footer .icons a,
+#footer .copyright,
+#footer .copyright a {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+/* On small screens Strata moves the footer out of the header onto the white page. */
+@media screen and (max-width: 980px) {
+	#header {
+		position: relative;
+	}
+	#main ~ #footer .icons a,
+	#main ~ #footer .copyright,
+	#main ~ #footer .copyright a {
+		color: var(--ink-muted);
+	}
+}
+
+/* ---------- Work grid ---------- */
+
+.work-item {
+	margin-bottom: 2.5em;
+}
+
+/* The whole thumbnail + title is one link. Strip default link styling. */
+.work-item .project-link {
+	border-bottom: none;
+	color: inherit;
+	display: block;
+}
+
+.work-item .project-thumb {
+	margin: 0 0 1em 0;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.work-item .project-thumb img {
+	aspect-ratio: 16 / 9;      /* every tile crops to the same shape */
+	display: block;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+	transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.work-item .project-link:hover .project-thumb img {
+	transform: scale(1.03);
+	opacity: 0.92;
+}
+
+.work-item h3 {
+	color: var(--ink-heading);
+	font-size: 1.15em;
+	line-height: 1.35;
+	margin: 0 0 0.35em 0;
+	transition: color 0.2s ease;
+}
+
+.work-item .project-link:hover h3,
+.work-item .project-link:focus-visible h3 {
+	color: var(--accent-ink);
+}
+
+.work-item .project-meta {
+	color: var(--ink-muted);
+	font-size: 0.9em;
+	letter-spacing: 0.04em;
+	margin: 0 0 0.5em 0;
+	text-transform: uppercase;
+}
+
+.work-item .project-meta .sep {
+	margin: 0 0.35em;
+	opacity: 0.6;
+}
+
+/* Keyboard focus ring on the card link */
+.work-item .project-link:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 4px;
+	border-radius: 4px;
+}
+
+/* ---------- Contact ---------- */
+
+.contact-list {
+	max-width: 32em;
+}
+
+/* ---------- Project pages ---------- */
+
+.project-back {
+	display: inline-block;
+	font-size: 0.9em;
+	letter-spacing: 0.04em;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+}
+
+.project-header h1 {
+	font-size: 1.75em;
+	line-height: 1.3;
+	margin-bottom: 0.4em;
+}
+
+.project-header .project-meta {
+	color: var(--ink-muted);
+	font-size: 0.9em;
+	letter-spacing: 0.04em;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+}
+
+/* Course description under the title */
+.project-header .project-lede {
+	line-height: 1.6;
+	margin: 0 0 2.5em 0;
+	max-width: 38em;
+}
+
+/* Problem / Approach / Result summary — three columns, no rules */
+.project-summary {
+	display: grid;
+	gap: 2em;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 0 0 3em 0;
+	padding: 0;
+}
+
+.project-summary h3 {
+	color: var(--ink-muted);
+	font-size: 0.9em;
+	letter-spacing: 0.08em;
+	margin-bottom: 0.6em;
+	text-transform: uppercase;
+}
+
+.project-summary p {
+	line-height: 1.6;
+	margin: 0;
+}
+
+@media screen and (max-width: 736px) {
+	.project-summary {
+		grid-template-columns: 1fr;
+		gap: 1.5em;
+	}
+}
+
+/* Fact list: role, tools, audience, year */
+.project-facts {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 3em 0;
+	display: grid;
+	gap: 1em 2em;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.project-facts li {
+	padding: 0;
+}
+
+.project-facts strong {
+	color: var(--ink-muted);
+	display: block;
+	font-size: 0.9em;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+/* Wide screenshot on project pages */
+.project-sample .image.fit img {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* Sample embed or launch card */
+.project-sample {
+	background: #f6f6f6;
+	border-radius: 4px;
+	margin: 0 0 3em 0;
+	padding: 2em;
+}
+
+.project-sample .frame {
+	aspect-ratio: 16 / 9;
+	background: #ddd;
+	border-radius: 4px;
+	margin-bottom: 1.5em;
+	overflow: hidden;
+	width: 100%;
+}
+
+.project-sample .frame iframe {
+	border: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.project-sample .note {
+	color: var(--ink-muted);
+	margin-top: 1em;
+}
+
+/* Prev / next */
+.project-nav {
+	border-top: 1px solid var(--rule);
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1.5em;
+}
+
+.project-nav span {
+	color: var(--ink-muted);
+	display: block;
+	font-size: 0.9em;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+/* ---------- Sidebar width and avatar size (desktop only; Strata stacks it below 980px) ---------- */
+
+@media screen and (min-width: 981px) {
+	#header {
+		width: 25%;
+		padding: 8em 3em;      /* top padding matches #main so avatar aligns with the headline */
+	}
+
+	#main {
+		margin-left: 25%;
+		width: calc(100% - 25%);
+	}
+
+	#header .image.avatar {
+		width: 8em;
+	}
+}
+
+@media screen and (min-width: 981px) and (max-width: 1280px) {
+	#header {
+		padding: 6em 2.5em;
+	}
+}
+
+
+/* Bold the name in the sidebar (Strata sets <strong> to weight 400). Synthesized bold: no extra font file, so no flash on load. */
+#header h1 strong,
+#header .site-title strong {
+	color: #fff;
+	font-weight: 700;
+}
+
+/* ---------- Sidebar nav ---------- */
+
+#header .side-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+	margin: 1.75em 0 0 0;
+}
+
+#header .side-nav a {
+	border-bottom: none;
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 0.95em;
+	letter-spacing: 0.04em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#header .side-nav a:hover,
+#header .side-nav a:focus-visible {
+	color: #fff !important;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+@media screen and (max-width: 980px) {
+	#header .side-nav {
+		align-items: center;
+		flex-direction: row;
+		gap: 1.5em;
+		justify-content: center;
+	}
+}
+
+/* ---------- Sidebar: resume + contact ---------- */
+
+#header .side-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.5em;
+	margin: 1.75em 0 0 0;
+}
+
+#header .side-contact a {
+	border-bottom: none;
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 0.9em;
+	text-decoration: none;
+	word-break: break-all;     /* long email/LinkedIn strings in a narrow column */
+}
+
+#header .side-contact a:hover,
+#header .side-contact a:focus-visible {
+	color: #fff !important;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+#header .side-contact .side-resume {
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 0.25em;
+}
+
+@media screen and (max-width: 980px) {
+	#header .side-contact {
+		align-items: center;
+	}
+}
+
+
+/* Keep the project-page name block identical to the home-page h1 at every breakpoint */
+#header .site-title {
+	font-size: 1.35em;
+	line-height: 1.75em;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 1280px) {
+	#header .site-title {
+		font-size: 1.25em;
+	}
+	#header .site-title br {
+		display: none;
+	}
+}
+
+/* Home-page headline is now the h1; keep it at Strata's h2 size */
+#one header.major h1 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+/* Avatar as a block so stray whitespace/comments can't change the gap beneath it */
+#header .image.avatar {
+	display: block;
+	margin-left: auto;
+}
+
+/* Footer: fixed line box so font loading can't shift the icons */
+#footer .copyright {
+	line-height: 1em;
+}
+#footer .icons {
+	line-height: 1em;
+}
+
+/* Sidebar background: scale by height so width changes (scrollbars, tab switches) can't move it */
+@media screen and (min-width: 981px) {
+	#header {
+		background-position: top left, center top;
+		background-size: auto, auto 100%;
+		background-repeat: repeat, no-repeat;
+	}
+}

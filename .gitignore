@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Working files not part of the published site
+_to_delete/
+images/source/
+index.strata-original.html
+
+# Strata SASS sources (compiled main.css is what ships)
+assets/sass/

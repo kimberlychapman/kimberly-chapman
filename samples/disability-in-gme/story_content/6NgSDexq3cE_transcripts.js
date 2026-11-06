@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":78,"text":"Scenario two: residency interview."},{"start":3468,"text":"It is midway through the interview,\r\nand the committee's consensus is that"},{"start":6689,"text":"Sunee is a highly accomplished, highly\r\nqualified, mission-aligned candidate."},{"start":12047,"text":"Then it is Dr. Walter's\r\nturn to ask a question."},{"start":14947,"text":"I was very impressed with your personal\r\nstatement, and I commend you for"},{"start":17967,"text":"being so open about your disability."},{"start":20537,"text":"What is your disability specifically,\r\nand will you need accommodations?"},{"start":26517,"text":"Select Next to continue\r\nto the response question"}]}]};
+    window.globalLoadJsAsset('story_content/6NgSDexq3cE_transcripts.js', JSON.stringify(data));
+})();

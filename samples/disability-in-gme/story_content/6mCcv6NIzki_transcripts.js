@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":9,"text":"Scenario one"},{"start":1409,"text":"selection committee meeting."},{"start":3890,"text":"You and the other members of the selection committee reviewed"},{"start":6770,"text":"the highlights from Sunee's application in preparation for their interview."},{"start":11329,"text":"Prior to the interview,"},{"start":12649,"text":"the committee begins discussing their suitability for the program."},{"start":16049,"text":"I'm concerned about this applicant."},{"start":18170,"text":"With their disability,"},{"start":19090,"text":"they might need too much support or fall behind during rotations."},{"start":24700,"text":"Select next to continue to the response question."}]}]};
+    window.globalLoadJsAsset('story_content/6mCcv6NIzki_transcripts.js', JSON.stringify(data));
+})();
