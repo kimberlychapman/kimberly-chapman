@@ -547,25 +547,9 @@ textarea:focus-visible,
 	}
 }
 
-/* Project pages on small screens: compact stacked header */
+/* Project pages on small screens: same stacked header as the home page (Strata was stretching it to full screen height) */
 @media screen and (max-width: 980px) {
 	.project-page #header {
 		height: auto;
-		padding: 1.5em 1.5em 1.25em;
-	}
-	.project-page #header .image.avatar {
-		margin-bottom: 0.5em;
-		width: 3.5em;
-	}
-	.project-page #header .site-title {
-		font-size: 1em;
-		line-height: 1.4;
-	}
-	.project-page #header .site-title br,
-	.project-page #header .site-title br + br {
-		display: none;
-	}
-	.project-page #header .site-title strong {
-		display: block;
 	}
 }
